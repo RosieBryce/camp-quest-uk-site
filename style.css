@@ -131,3 +131,12 @@ footer small{display:block;color:#a9c7b8;line-height:1.6;margin-top:8px}
 .draft-note a{color:var(--sky)}
 
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* what campers say */
+.notes{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;margin-top:32px;align-items:start}
+.note{margin:0}
+.note img{width:100%;height:auto;border-radius:4px;box-shadow:0 10px 24px rgba(27,38,59,.18)}
+.n1,.n2,.n3{grid-column:span 2}
+.n4,.n5{grid-column:span 3}
+.n1{transform:rotate(-1.5deg)}.n2{transform:rotate(1deg)}.n3{transform:rotate(-.8deg)}.n4{transform:rotate(.6deg)}.n5{transform:rotate(-1deg)}
+@media(max-width:760px){.notes{grid-template-columns:1fr;gap:26px}.n1,.n2,.n3,.n4,.n5{grid-column:auto}}
